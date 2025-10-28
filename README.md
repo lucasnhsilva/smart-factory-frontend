@@ -1,6 +1,25 @@
-# SmartFactoryFrontend
+# Smart Factory Insights — Frontend (Angular)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+Interface web moderna e responsiva do projeto **Smart Factory Industrial Insights**, desenvolvida em **Angular**, com foco em **análises industriais, KPIs (OEE, TRS, MTBF, MTTR)**, e visualização em tempo real de **alarmes e eventos de fábrica**.
+
+---
+
+## Tecnologias Principais
+
+| Categoria | Ferramenta | Função |
+|------------|-------------|--------|
+| **Framework** | [Angular 18+](https://angular.dev) | SPA modular e escalável |
+| **Estilização** | [TailwindCSS](https://tailwindcss.com) | Layout responsivo e moderno |
+| **Componentes UI** | [PrimeNG](https://primeng.org) | Padrões visuais consistentes |
+| **Estado** | [RxJS](https://rxjs.dev) + [NgRx Signals](https://ngrx.io/guide/signals) | Reatividade e controle de estado |
+| **Comunicação** | HTTP + WebSocket (NestJS Gateway) | Consumo da API e dados em tempo real |
+| **Documentação** | [Storybook](https://storybook.js.org/) | Catálogo de componentes reutilizáveis |
+| **Arquitetura** | Clean Architecture adaptada para front | Camadas bem definidas e modulares |
+
+---
+---
+
+# Running the app section
 
 ## Development server
 
