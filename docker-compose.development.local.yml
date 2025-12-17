@@ -1,0 +1,15 @@
+services:
+    smii_frontend:
+        #build:
+        #    context: ./frontend
+        #    dockerfile: Dockerfile.dev
+        ports:
+            - "4200:4200"
+        environment:
+            - API_URL=http://smii_backend:3000
+        networks:
+            - smii_net
+
+networks:
+    smii_net:
+        external: true
