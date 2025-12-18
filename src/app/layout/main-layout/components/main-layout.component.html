@@ -1,5 +1,32 @@
 <p-drawer [(visible)]="visible">
-  <p-tree class="w-full"></p-tree>
-  <p-menu class="w-full"></p-menu>
+  <p-panel [showHeader]="false" class="my-2">
+    <p-tree
+      [value]="nodes"
+      selectionMode="single"
+      [(selection)]="selectedNode"
+      (onNodeSelect)="onNodeSelect($event)"
+      class="w-full"
+    >
+      <ng-template let-node pTemplate="default">
+        <span class="node-label">
+          <b>{{ node.label }}</b>
+          <span
+            class="type-badge"
+            [ngClass]="'badge-' + node.data.type.toLowerCase()"
+          >
+            {{ node.data.type }}
+          </span>
+        </span>
+      </ng-template>
+    </p-tree>
+  </p-panel>
+  <p-menu
+    class="w-full my-2"
+    [model]="[{ label: 'Available soon...' }]"
+  ></p-menu>
 </p-drawer>
-<p-button (click)="visible = true" icon="pi pi-arrow-right"></p-button>
+<p-button
+  (click)="visible = true"
+  (class)="(visible ? 'hidden' : '')"
+  icon="pi pi-arrow-right"
+></p-button>

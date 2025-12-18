@@ -1,0 +1,42 @@
+.factory-tree {
+  background: #f5f5f5;
+  /* Fundo cinza claro industrial */
+  padding: 10px;
+}
+
+.node-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.type-badge {
+  font-size: 10px;
+  background: #e0e0e0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #555;
+  margin-left: 8px;
+}
+
+/* Cores por nível hierárquico (Opcional) */
+.icon-enterprise {
+  color: #3f51b5;
+}
+
+.icon-site {
+  color: #009688;
+}
+
+.icon-area {
+  color: #ff9800;
+}
+
+.icon-line {
+  color: #e91e63;
+}
+
+.icon-workcell {
+  color: #4caf50;
+}
